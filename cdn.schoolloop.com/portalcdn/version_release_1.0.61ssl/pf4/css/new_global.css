@@ -1,0 +1,30 @@
+/*
+ *
+ *  * Copyright (c) 2004-2014, School Loop, Inc. All Rights Reserved.
+ *
+ */
+
+.display-none {
+    display:none
+}
+
+.display-none-important {
+    display:none !important;
+}
+
+.display-block {
+    display:block;
+}
+
+.visibility-hidden {
+    /*Tip: Even invisible elements take up space on the page. Use the display property to create invisible elements that do not take up space!*/
+    visibility: hidden;    
+}
+
+.indent-left {
+    padding-left:10px;
+}
+
+.position-relative {
+    position: relative;
+}

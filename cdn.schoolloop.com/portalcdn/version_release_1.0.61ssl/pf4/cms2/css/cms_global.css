@@ -1,0 +1,247 @@
+/*
+ *
+ *  * Copyright (c) 2004-2016, School Loop, Inc. All Rights Reserved.
+ *
+ */
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-size: 16px;
+}
+
+.cms2-header-area {
+    display: block;
+}
+
+.cms2-row {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    display: inline;
+}
+
+.cms2-hero {
+    width: 100%;
+    height: 400px;
+}
+
+.cms2-100-column {
+    width: 100%;
+}
+
+.cms2-50-column {
+    width: 548px;
+    display: inline;
+    border-width: 1px;
+}
+
+.cms2-25-column {
+    width: 274px;
+    display: inline;
+    border-width: 1px;
+}
+
+
+/*RW success pop down*/
+
+.cms2-success-pop-down {
+    position: absolute;
+    left:50%;
+    top: 100px;
+    opacity:1;
+    z-index: 1200;
+    background: #b9df90;
+    border: 2px solid #a7d674;
+    padding: 20px 25px;
+    transform: translate(-50%, 0);
+    animation-name: drop-down;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.cms2-error-pop-down {
+    position: absolute;
+    left:50%;
+    top: 100px;
+    opacity:1;
+    z-index: 1200;
+    background: #f2838f;
+    border: 2px solid #ed5565;
+    padding: 20px 25px;
+    transform: translate(-50%, 0);
+    animation-name: drop-down;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.cms2-warning-pop-down {
+    position: absolute;
+    left:50%;
+    top: 100px;
+    opacity:1;
+    z-index: 1200;
+    background: #ffdd87;
+    border: 2px solid #ffce54;
+    padding: 20px 25px;
+    transform: translate(-50%, 0);
+    animation-name: drop-down;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.cms2-info-pop-down {
+    position: absolute;
+    left:50%;
+    top: 100px;
+    opacity:1;
+    z-index: 1200;
+    background: #7cd1ef;
+    border: 2px solid #4fc1e9;
+    padding: 20px 25px;
+    transform: translate(-50%, 0);
+    animation-name: drop-down;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+
+@keyframes drop-down {
+    from {
+        top: 0px;
+        opacity:.1;
+    }
+    to {
+        top: 100px;
+        opacity:1;
+    }
+}
+
+
+/* Embedded CSS */
+
+.full_css_editor__description {
+    font-size: 13px;
+    color: #666666;
+}
+
+.cms2-hidden-text-for-screenreader {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.sl-cms2-title-alignment--left {
+    text-align: left !important;
+}
+
+.sl-cms2-title-alignment--center {
+    text-align: center !important;
+}
+
+.sl-cms2-title-alignment--right {
+    text-align: right !important;
+}
+
+/* waiting screen */
+.sl-waiting-screen {
+
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    z-index:400;
+}
+
+.sl-waiting-screen:after {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: url('../../../../../release_1.0.61/pf4/img/sl-animated.gif')
+    50% 50%
+    no-repeat;
+    margin-left: 50%;
+}
+
+.vex-dialog-button:disabled {
+    cursor: not-allowed;
+}
+
+/* For the label of the accordion in the tool dropdown */
+
+.sl-cms2-toolbar__text-alignment-radio .cms2_radio_label_accordion {
+  background-color: #666F82;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 18px 2px 10px;
+    margin-left: 5px;
+}
+
+.sl-cms2-toolbar__text-alignment-radio .cms2_radio_label_accordion:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+.error { display: table; margin:0px 10px 10px 0px; width: 100%;
+    -moz-box-shadow:    0px 0px 4px #d2d2d2;
+    -webkit-box-shadow: 0px 0px 4px #d2d2d2;
+    box-shadow:         0px 0px 4px #d2d2d2;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+
+.error .left { display: table-cell; background: url(../../../../../release_1.0.61/pf4/img/icon_message_error.png) #cc0000 no-repeat; width: 50px; min-height: 50px; margin:0px; font-weight:bold; font-size:48px; line-height:48px; color:#333333;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;}
+
+.error .right { display: table-cell; background: #ff9999; margin: 0px; padding: 15px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;}
+
+.page-message-error {
+    clear: both;
+    display: block;
+    padding: 20px 0 0;
+}

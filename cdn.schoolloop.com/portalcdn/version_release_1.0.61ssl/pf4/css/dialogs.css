@@ -1,0 +1,123 @@
+/* styles for dialogs */
+/* Pass in as contentClassName to vex dialogs*/
+
+@supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices */
+    .vex.vex-theme-os .vex-content.sl-cms2-ios-dialog-kludge .vex-dialog-input {
+        height: 200px;
+    }
+}
+
+.vex .vex-theme-os .vex-content .vex-dialog-input, .vex-content {
+    overflow: auto;      /* rw this added so all dialogs to stop content breaking under --- so can be removed below */
+}
+
+.vex-dialog-form { /* this needed to fix scroll bar */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.sl-dialog-maxi {
+    width: 95% !important;
+    height: 90% !important;
+    overflow:auto; /* rw maybe add this to other dialogs to stop content breaking under */
+}
+
+.sl-dialog-wide {
+    width:800px !important;
+    height: 90% !important;
+    overflow:auto; /* rw maybe add this to other dialogs to stop content breaking under */
+}
+
+.sl-dialog-medium {
+    width:600px !important;
+}
+
+
+.sl-dialog-medium-max-height {
+    width:600px !important;
+    height: 100%;
+}
+
+.sl-dialog-embed-css {
+    width:625px !important;
+    height: 400px !important;
+    overflow:auto; /* rw maybe add this to other dialogs to stop content breaking under */
+}
+
+.sl-dialog-default {
+    width:450px !important;
+
+}
+
+.sl-dialog-wide-max-height{
+    width:800px !important;
+    max-height:90%;
+}
+
+.sl-dialog-wide-max-height-scrollable{
+    width:800px !important;
+    height: 100%;
+    overflow: auto;
+}
+
+.sl-dialog-default-height {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.sl-dialog-tall-height {
+    background-color: white;
+    height: 650px;
+    overflow-y: auto;
+}
+
+.sl-dialog-inner-tall-height .vex-dialog-input {
+    height: 650px !important;
+    overflow-y: auto;
+}
+
+
+.sl-dialog-default-height-560 {
+    height: 560px !important;
+    overflow-y: auto;
+}
+
+.vex.vex-theme-os .sl-dialog-cms1-table-form {
+    width:1000px !important;
+    height:95% !important;
+}
+
+.sl-dialog-cms1-table-form .vex-dialog-form {
+    height: 100%;
+}
+
+.sl-dialog-cms1-table-form .vex-content .vex-dialog-input {
+    height: calc(100% - 64px); /*allows bringing in vex buttonss */
+}
+
+.sl-dialog-cms1-table-form .vex-dialog-input {
+    /*width: 100%;*/
+    height: calc(100% - 64px) !important;
+}
+
+.sl-dialog-cms1-table-iframe {
+    height:99% !important;
+    /*height: calc(100% - 64px);*/
+    width: 100% !important;
+    display:none;
+    border:none;
+}
+
+.vex #page-wrapper {
+    padding-top: 0px;
+}
+
+.sl-dialog-loop-links {
+    overflow: hidden;
+    padding: .5em 0.2em !important;
+}
+
+/* End of styles for dialogs */
