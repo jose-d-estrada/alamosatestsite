@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 19 Apr 2023 14:08:53 at https://alamosa.aps.edu/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*alamosa.aps.edu/portal/* -*alamosa.aps.edu/misc/*
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://alamosa.aps.edu/ -O1 "C:\My Web Sites\Alamosa ES" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*alamosa.aps.edu/portal/* -*alamosa.aps.edu/misc/* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:11:13	Error: 	"Not Found" (404) at link https://alamosa.aps.edu/GET (from https://www.browsealoud.com/plus/scripts/ba.js)
+14:11:13	Error: 	"Not Found" (404) at link https://alamosa.aps.edu/Trident/ (from https://www.browsealoud.com/plus/scripts/ba.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 47 seconds : 288 links scanned, 285 files written (34163122 bytes overall) [7524730 bytes received at 45058 bytes/sec], 31725016 bytes transferred using HTTP compression in 129 files, ratio 15%, 11.5 requests per connection
+(2 errors, 0 warnings, 0 messages)
